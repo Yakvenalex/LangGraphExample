@@ -1,0 +1,41 @@
+# Игнорирование виртуальных окружений Python
+venv/
+.venv/
+env/
+ENV/
+.env
+# Игнорирование скомпилированных файлов Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Игнорирование кэша и артефактов SASS
+*.sass-cache/
+.sass-cache/
+**/.sass-cache/
+
+# Игнорирование логов и временных файлов
+*.log
+*.tmp
+*.temp
+*.swp
+
+# Игнорирование настроек проекта для IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Игнорирование файлов сборки
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Игнорирование кэша и артефактов системы
+.DS_Store
+Thumbs.db
+
+# Игнорирование специфичных для ОС файлов
+*.bak
+*~
