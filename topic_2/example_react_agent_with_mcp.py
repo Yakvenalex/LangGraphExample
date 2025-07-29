@@ -1,9 +1,7 @@
 import asyncio
-from typing import Annotated, Sequence, TypedDict
 from dotenv import load_dotenv
 from langchain_deepseek import ChatDeepSeek
 from langchain_core.tools import tool
-from langgraph.graph.message import add_messages
 from faker import Faker
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
@@ -55,8 +53,7 @@ async def get_all_tools():
 async def run_query(agent, query: str):
     """Выполняет один запрос к агенту с читаемым выводом"""
     print(f"🎯 Запрос: {query}")
-    print("=" * 80)
-    
+
     step_counter = 0
     processed_messages = set()  # Для избежания дублирования
     

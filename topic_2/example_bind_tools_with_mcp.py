@@ -61,8 +61,7 @@ async def get_all_tools():
     mcp_tools = await mcp_client.get_tools()
 
     # Объединяем ваши инструменты с MCP инструментами
-    all_tools = custom_tools + mcp_tools
-    return all_tools
+    return custom_tools + mcp_tools
 
 
 llm = ChatDeepSeek(model="deepseek-chat")
