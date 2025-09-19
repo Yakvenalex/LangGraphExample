@@ -60,5 +60,5 @@ uvicorn==0.35.0
 xxhash==3.5.0
 zstandard==0.23.0
 faker==37.4.2
-langchain-amvera==0.3.0
+langchain-amvera==0.3.1
 langchain-gigachat==0.3.12
